@@ -21,6 +21,4 @@ RUN     chown -R www-data:www-data /etc/nginx/ssl/
 
 RUN     touch /var/www/html/index.php
 
-#EXPOSE  443:443
-
 CMD     ["nginx", "-g", "daemon off;"]

@@ -55,13 +55,13 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: ~/aelbouaa/data/mariadb-volume/
+      device: /home/aelbouaa/data/mariadb-volume/
       o: bind
   wordpress-volume:
     driver: local
     driver_opts:
       type: none
-      device: ~/aelbouaa/data/wordpress-volume/
+      device: /home/aelbouaa/data/wordpress-volume/
       o: bind
 
 

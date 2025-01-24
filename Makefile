@@ -17,3 +17,6 @@ clean:
 	docker compose -f ./srcs/docker-compose.yml down --rmi all -v
 	docker system prune -f
 
+fclean: clean
+	sudo rm -fr /home/aelbouaa/data/mariadb-volume/*
+	sudo rm -fr /home/aelbouaa/data/wordpress-volume/*

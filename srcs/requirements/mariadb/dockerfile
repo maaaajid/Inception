@@ -7,8 +7,6 @@ COPY    ./conf/mariadb.sh ./usr/local/bin/
 
 RUN     sed -i 's/bind-address.*/bind-addres=0.0.0.0/' /etc/mysql/mariadb.conf.d/50-server.cnf
 
-#EXPOSE  3306:3306
-
 RUN     chmod +x ./usr/local/bin/mariadb.sh
 
 CMD     [ "mariadb.sh" ]
